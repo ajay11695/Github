@@ -6,6 +6,8 @@ import Sidevar from './component/Sidevar';
 import SingleArticle from './component/SingleArticle';
 import Help from './component/Help';
 import NotFound from './component/NotFound';
+import Books from './component/Books';
+import People from './component/People';
 
 function App() {
   return (
@@ -17,8 +19,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='*' element={<NotFound />} />
-          <Route path='/peoples' element={<NotFound people={'all'}/>} />
-          <Route path='/books' element={<NotFound book={'allbook'}/>} />
+          <Route path='/peoples' element={<People/>} />
+          <Route path='/books' element={<Books/>} />
           <Route path='/help' element={<Help />} />
           <Route path='/articles' element={<Article />} />
           <Route path='/articles/:slug' element={<SingleArticle />} />

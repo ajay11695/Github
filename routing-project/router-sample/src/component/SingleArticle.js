@@ -1,4 +1,4 @@
-import articles from "../data"
+import articles from "../data/data"
 import React from "react"
 import { Link,useParams } from "react-router-dom"
 

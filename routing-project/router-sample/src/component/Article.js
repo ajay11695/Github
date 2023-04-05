@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import articles from '../data'
+import articles from '../data/data'
 
 function Article() {
     console.log(articles)
